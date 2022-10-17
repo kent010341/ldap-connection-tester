@@ -1,0 +1,16 @@
+{
+  "connection": {
+    "scheme": "ldap",
+    "host": "127.0.0.1",
+    "port": 389
+  },
+  "user": {
+    "name": "user",
+    "password": "1234"
+  },
+  "search": {
+    "base": "DC=example,DC=com",
+    "scope": "sub",
+    "filter": ""
+  }
+}

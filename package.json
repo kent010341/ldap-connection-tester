@@ -1,0 +1,23 @@
+{
+  "name": "ldap-connect-tester",
+  "version": "0.1.0",
+  "description": "A tester for LDAP connection.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "bind": "node bind.js",
+    "search": "node search.js"
+  },
+  "keywords": [
+    "npm",
+    "node",
+    "ldap"
+  ],
+  "author": "kent.chen",
+  "license": "MIT",
+  "dependencies": {
+    "assert": "2.0.0",
+    "ldapjs": "2.3.3",
+    "config": "3.3.8"
+  }
+}
