@@ -14,8 +14,18 @@ const url = scheme + '://' + host + ':' + port;
 
 const client = ldap.createClient({url: url});
 
+// print details
+console.log('Connect to ' + url);
+console.log('user name: '+ username);
+
 // bind
-client.bind(username, userpassword, function(err) {
+client.bind(username, userpassword, (err) => {
   assert.ifError(err);
   console.log('Bind succeed!');
+
+  // unbind after binding
+  client.unbind((err) => {
+    assert.ifError(err);
+    console.log('Unbind succeed!');
+  });
 });
