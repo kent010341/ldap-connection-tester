@@ -2,7 +2,7 @@
   "connection": {
     "scheme": "ldap",
     "host": "127.0.0.1",
-    "port": 389
+    "port": "default"
   },
   "user": {
     "name": "user",
